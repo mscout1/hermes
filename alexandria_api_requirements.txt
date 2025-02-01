@@ -8,7 +8,7 @@ idna==2.10
 itsdangerous==2.0.0
 Jinja2==3.0.0
 MarkupSafe==2.0.0
-psycopg2==2.9.9
+psycopg2-binary==2.9.9
 python-dateutil==2.8.1
 requests==2.31.0
 six==1.16.0

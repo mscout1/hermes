@@ -15,6 +15,7 @@ from adapter.fictionHuntAdapter import FictionHuntAdapter
 from adapter.fictionPressAdapter import FictionPressAdapter
 from adapter.hpFanficArchiveAdapter import HpFanficArchiveAdapter
 from adapter.hpffAdapter import HarryPotterFanfictionAdapter
+from adapter.mcstoriesAdapter import McStoriesAdapter
 from adapter.parahumansAdapter import ParahumansAdapter
 from adapter.portkeyArchiveAdapter import PortkeyArchiveAdapter
 from adapter.questionableQuestingAdapter import QuestionableQuestingAdapter
@@ -45,6 +46,7 @@ def registerAdapters() -> None:
     adapters[FicType.sufficientvelocity] = SufficientVelocityAdapter()
     adapters[FicType.questionablequesting] = QuestionableQuestingAdapter()
     adapters[FicType.harrypotterfanfiction] = HarryPotterFanfictionAdapter()
+    adapters[FicType.mcstories] = McStoriesAdapter()
     adapters[FicType.parahumans] = ParahumansAdapter()
     adapters[FicType.adultfanfiction] = AdultFanfictionAdapter()
     adapters[FicType.fanficsme] = FanficsMeAdapter()

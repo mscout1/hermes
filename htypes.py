@@ -36,6 +36,7 @@ class FicType(IntEnum):
     fanficparadisesfw = 24
     fanficparadisensfw = 25
     wanderinginn = 26
+    mcstories = 27
 
 
 def adaptFicType(ftype: FicType) -> AsIs:

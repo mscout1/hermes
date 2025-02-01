@@ -353,3 +353,13 @@ def decodeCloudFlareEmail(email: str) -> str:
     octets = [int(email[i : i + 2], 16) for i in range(0, len(email), 2)]
     key, ebytes = octets[0], octets[1:]
     return "".join([chr(o ^ key) for o in ebytes])
+
+
+def dicts_from_table(bs_table):
+    headers = [header.text for header in bs_table.find_all('th')]
+    results = [
+                {headers[i]: cell for i, cell in enumerate(row.find_all('td'))}
+                for row in bs_table.find_all('tr')
+    ]
+    results = [r for r in results if r]
+    return results
